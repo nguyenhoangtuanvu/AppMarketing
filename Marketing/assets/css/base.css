@@ -1,0 +1,132 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* base */
+:root {
+    --primary-color: #1f5daa;
+    --primary-color-hover: #0d5f92;
+    --primary-color-green: #4ea344;
+    --primary-color-orange: #ff7f2c;
+    --text-color: #021533;
+    --text-white-color: #fff;
+    --backg-hover-color: #e9ebee;
+    --content-bacg-color: rgb(244, 245, 248);
+    --text-color-blur: #8796a7;
+    --table-items-hover-color: #f3f8f8;
+}
+* {
+    box-sizing: inherit;
+}
+html {
+    font-size: 65.5%;
+    line-height: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+
+
+
+/* responsive */
+.grid {
+    /* width: 1200px; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.row {
+    width: 100%;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.column-1-2 {
+    width: 49%;
+}
+.column-1-3 {
+    width: 32%;
+}
+/* overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.2);
+    display: none;
+}
+.overlay-not-color {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 46px;
+    left: 0;
+    background-color: transparent;
+    display: none;
+}
+.open {
+    display: block;
+}
+.bold-600 {
+    font-weight: 600 !important;
+}
+.backg-vilot-color {
+    background-color: rgb(91, 111, 213);
+}
+.black-color-blur {
+    color: #404557;
+}
+.customer-border {
+    border: 1px solid #bbb !important;
+}
+.customer-border:hover {
+    border-color: #686cde !important;
+}
